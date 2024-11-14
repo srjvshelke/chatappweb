@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 
     <div className="block" >
       <h1 className="text-fuchsia-500">
-    
+
       </h1>
     </div>
 
