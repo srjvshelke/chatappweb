@@ -1,8 +1,9 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
+import { FcGoogle } from "react-icons/fc";
 import React, { useState } from 'react'
-
+import Backgroundforlogin from '../../public/chattingimg.jpg';
 const page: React.FC = () => {
     const [logindata, setlogindata] = useState({
         Username: "",
@@ -28,40 +29,68 @@ const page: React.FC = () => {
         <div className='Loginpage w-full h-screen flex py-4 px-4'>
             <div className='left w-[50%] h-[100%]' >
                 <div className='loginside w-[100%] h-[100%] flex flex-col justify-center items-center bg-slate-400 '>
-                    <h2 className='font-bold text-4xl mb-6'>Welcome Back</h2>
-                    <form className=' w-[100%] h-[100%]'>
-                        <div className="flex flex-col ">
+                    <form className='w-[100%] h-[100%] py-4 px-7 flex flex-col justify-center items-center'>
+                        <h2 className='font-bold text-4xl mb-6 '>Welcome Back</h2>
+
+                        <div className="flex flex-col w-[60%]">
                             <label className="block text-gray-700 text-lg font-bold mb-2">
                                 Username
                             </label>
                             <input id="username" name="Username" type="username" value={logindata.Username} required
-                                className="w-[100%]  bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
+                                className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
                                 placeholder="Enter your Username" onChange={userlogindata} />
                         </div>
-                        <div className="mt-4 flex flex-col w-full">
+                        <div className="mt-4 flex flex-col w-[60%]">
                             <div className='flex justify-between'>
-                                <label className="block text-gray-700 text-lg font-bold mb-2">
+                                <label className=" block text-gray-700 text-lg font-bold mb-2">
                                     Password
                                 </label>
                                 <Link href="/" className="text-sm text-gray-500">Forget Password?</Link>
                             </div>
                             <input id="Password" name="Password" type="Password" value={logindata.Password} required
-                                className="w-full  bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
+                                className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
                                 placeholder="Enter your Password" onChange={userlogindata} />
 
                         </div>
 
-                    </form>
-                    <div className='google-signin'>
+                        <div className=" mt-8 w-[60%]">
+                            <button className='border border-black w-full  bg-gray-700 text-white font-bold py-2 px-4 rounded hover:bg-gray-600'>Sign In</button>
+                        </div>
+                        <div className="mt-8 flex items-center justify-between w-[60%]">
+                            <span className="border-b w-1/5 lg:w-1/4"></span>
+                            <text href="#" className="text-xs text-center text-gray-500 uppercase">or login with gmail</text>
+                            <span className="border-b w-1/5 lg:w-1/4"></span>
+                        </div>
+                        <div className=" mt-8 w-[60%]  ">
+                            <button className='border border-black w-full flex justify-center items-center bg-white text-black font-bold py-2 px-4 rounded hover:bg-gray-200'>
+                                <FcGoogle style={{ fontSize: "1.5em", marginRight: "10px" }} />
+                                Sign in with Google</button>
+                        </div>
 
-                    </div>
+
+                        <div className=" mt-8 w-[60%]  text-center text-lg">
+                            No account?
+                            <Link href="#" className="font-medium text-indigo-500 underline-offset-4 hover:underline">Create One</Link>
+                        </div>
+
+                    </form>
 
                 </div>
 
+                {/*  */}
 
             </div>
-            <div className='right w-[50%] h-[100%] bg-black '>
-                dfdf
+            <div className=" right w-[50%] h-[100%]">
+                <div className="m-12 w-full h-full"
+                    style={{
+                        height: "100%",
+                        width: "100%",
+                        backgroundImage:
+                            `url(${Backgroundforlogin})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                    }}>
+                </div>
             </div>
 
 
