@@ -1,4 +1,4 @@
-"use client" 
+"use client"
 
 import React, { useState } from 'react'
 import { FcGoogle } from "react-icons/fc";
@@ -33,74 +33,81 @@ const page: React.FC = () => {
     }
     return (
         <div className='Loginpage w-full h-screen flex py-4 px-4'>
-        <div className='left w-[50%] h-[100%]' >
-            <div className='loginside w-[100%] h-[100%] flex flex-col justify-center items-center bg-slate-400 '>
-                <form className='w-[100%] h-[100%] py-4 px-7 flex flex-col justify-center items-center'>
-                    <h2 className='font-bold text-4xl mb-6 '>Welcome Back</h2>
+            <div className='left w-[50%] h-[100%]' >
+                <div className='loginside w-[100%] h-[100%] flex flex-col justify-center items-center bg-slate-400 '>
+                    <form className='w-[100%] h-[100%] py-4 px-7 flex flex-col justify-center items-center'>
+                        <h2 className='font-bold text-4xl mb-6 '>Welcome</h2>
 
-                    <div className="flex flex-col w-[60%]">
-                        <label className="block text-gray-700 text-lg font-bold mb-2">
-                        Name
-                        </label>
-                        <input id="username" name="Username" type="username" value={logindata.Username} required
-                            className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
-                            placeholder="Enter your Name" onChange={} />
-                    </div>
-                    <div className="mt-4 flex flex-col w-[60%]">
-                        <div className='flex justify-between'>
+                        <div className="flex flex-col w-[60%]">
+                            <label className="block text-gray-700 text-lg font-bold mb-2">
+                                Name
+                            </label>
+                            <input id="Name" name="Name" type="Name" value={Registration.Name} required
+                                className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
+                                placeholder="Enter your Name" onChange={userregisterdata} />
+                        </div>
+                        <div className="mt-4 flex flex-col w-[60%]">
+                            <label className="block text-gray-700 text-lg font-bold mb-2">
+                                Username
+                            </label>
+                            <input id="username" name="Username" type="username" value={Registration.Username} required
+                                className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
+                                placeholder="Enter your Username" onChange={userregisterdata} />
+                        </div>
+                        <div className="mt-4 flex flex-col w-[60%]">
                             <label className=" block text-gray-700 text-lg font-bold mb-2">
                                 Password
                             </label>
-                            <Link href="/" className="text-sm text-gray-500">Forget Password?</Link>
+                            <input id="Password" name="Password" type="Password" value={Registration.Password} required
+                                className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
+                                placeholder="Enter your Password" onChange={userregisterdata} />
+
                         </div>
-                        <input id="Password" name="Password" type="Password" value={logindata.Password} required
-                            className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
-                            placeholder="Enter your Password" onChange={userlogindata} />
 
-                    </div>
+                        <div className="mt-4 flex flex-col w-[60%]">
+                            <label className=" block text-gray-700 text-lg font-bold mb-2">
+                                Confirm Password
+                            </label>
+                            <input id="confirm_Password" name="confirm_Password" type="confirm_Password" value={Registration.Confirm_Password} required
+                                className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
+                                placeholder="Enter your confirm_Password" onChange={userregisterdata} />
 
-                    <div className=" mt-8 w-[60%]">
-                        <button className='border border-black w-full  bg-gray-700 text-white font-bold py-2 px-4 rounded hover:bg-gray-600'>Sign In</button>
-                    </div>
-                    <div className="mt-8 flex items-center justify-between w-[60%]">
-                        <span className="border-b w-1/5 lg:w-1/4"></span>
-                        <text href="#" className="text-xs text-center text-gray-500 uppercase">or login with gmail</text>
-                        <span className="border-b w-1/5 lg:w-1/4"></span>
-                    </div>
-                    <div className=" mt-8 w-[60%]  ">
-                        <button className='border border-black w-full flex justify-center items-center bg-white text-black font-bold py-2 px-4 rounded hover:bg-gray-200'>
-                            <FcGoogle style={{ fontSize: "1.5em", marginRight: "10px" }} />
-                            Sign in with Google</button>
-                    </div>
+                        </div>
+
+                        <div className=" mt-8 w-[60%]">
+                            <button className='border border-black w-full  bg-gray-700 text-white font-bold py-2 px-4 rounded hover:bg-gray-600'>Sign Up</button>
+                        </div>
 
 
-                    <div className=" mt-8 w-[60%]  text-center text-lg">
-                        No account?
-                        <Link href="#" className="font-medium text-indigo-500 underline-offset-4 hover:underline">Create One</Link>
-                    </div>
 
-                </form>
+
+                        <div className=" mt-8 w-[60%]  text-center text-lg">
+                            Already have an account?
+                            <Link href="#" className="font-medium text-indigo-500 underline-offset-4 hover:underline">Login Here</Link>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                {/*  */}
 
             </div>
-
-            {/*  */}
-
-        </div>
-        <div className=" right w-[50%] h-[100%]">
-            <div className="m-12 w-full h-full"
-                style={{
-                    height: "100%",
-                    width: "100%",
-                    backgroundImage:
-                        `url(${Backgroundforlogin})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                }}>
+            <div className=" right w-[50%] h-[100%]">
+                <div className="m-12 w-full h-full"
+                    style={{
+                        height: "100%",
+                        width: "100%",
+                        backgroundImage:
+                            `url(${Backgroundforlogin})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                    }}>
+                </div>
             </div>
+
+
         </div>
-
-
-    </div>
         // <div className="signup  min-h-screen  flex flex-col justify-center items-center  py-12 sm:px-6 lg:px-8">
         //     <div className="box h-[50%] w-[35%] border-2 border-zinc-950 px-7 pt-5 pb-4 flex flex-col justify-center items-center  bg-red-500">
         //         <h1 className='text-center font-bold from-neutral-100 text-4xl pb-5' >SignUp</h1>
