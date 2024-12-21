@@ -7,6 +7,7 @@ interface chatcontprop {
 }
 const Chatcontent: React.FC<chatcontprop> = (props) => {
     return (
+
         <div
             // style={{ animationDelay: `0.8s` }}
             className={`chat__item w-[100%] flex ${props.user =="me"?  "justify-end items-end" :" justify-start items-start"} mb-3 `}

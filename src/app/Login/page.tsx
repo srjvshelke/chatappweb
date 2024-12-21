@@ -80,7 +80,7 @@ const page: React.FC = () => {
                 {/*  */}
 
             </div>
-            <div className=" right w-[50%] h-[100%]">
+            <div className="right w-[50%] h-[100%]" >
                 <div className="m-12 w-full h-full"
                     style={{
                         height: "100%",
@@ -92,13 +92,7 @@ const page: React.FC = () => {
                     }}>
                 </div>
             </div>
-
-
         </div>
-
-
-
-
 
         // <div className="login  min-h-screen  flex flex-col justify-center items-center  py-12 sm:px-6 lg:px-8">
         //     <div className="box h-[50%] w-[35%] border-2 border-zinc-950 px-7 pt-5 pb-4 flex flex-col justify-center items-center  bg-red-500">
@@ -141,14 +135,6 @@ const page: React.FC = () => {
         // </div >
 
         // </div >
-
-
-
-
-
-
-
-
     )
 }
 

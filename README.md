@@ -38,3 +38,49 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 <!-- Jaanti hu ki tum roshni ho to mai andhera...
 Kaali raato mei kya mila hai kisi ko savera?" -->
+
+<!-- Mera dil baith raha hai, tum baithti kyu nahi -->
+
+<!-- Asa kya hai ki...
+tumhe likhta hun toh labz ho tum...
+tumhe sochta hun toh kheyal ho tum....
+tumhe mangta hun toh dua ho tum...
+tumhe puchta ho toh sawal ho tum....
+tumhe keheta hun toh baat ho tum....
+tumhe tarasta hun toh barsat ho tum.....
+tumhe padta hun toh Sher ho tum.....
+......agar sach kahu toh mohabbat ho tum..... -->
+
+
+<!-- Ke kal rat mohabbat milne ayi thi, puch rahi thi tumhare bare me...
+Shayad bat karni thi tumse ya fir shikayat hi keh lo..
+Shikayat kyu, kyuki mujh jese log tumhe mohabbat kehne lage hai..
+Aur kya hi galat keh rahe h, tum ho hi mohabbat ...
+Log apne mehboob se mohabbat krte h par mene apne mehboob ko hi mohabbat kaha hai...
+Aur jab apko mohabbat se mohabbat ho jati hai to ye mohabbat ki inteha ho jati hai...
+Aisa kya h ki tumhe likhti hu to lafz ho tum, tumhe sochti hu to khayal ho tum, tumhe mangti hu to dua ho tum, tumhe puchti hu to sawal ho tum, tumhe kehti hu to bat ho tum, tumhe tarasti hu to barsat ho tum, tumhe pdht8 hu to sher ho tum
+Sach kahu to mohabbat ho tum -->
+
+
+<!-- Agar voh puch le humse ki 
+"kis baat ka humko gum hn , kis baat ka gum ho ,Hume agr voh puch le humse "!
+ Ki agar voh puch le humse ki
+ "kaha rehte ho shaamon m , kha rhe hum shaamo m ,agr voh puch le humse "!! -->
+
+
+ <!-- Ek baat mai tumse sare aam kehta hu .....
+Mohabbat ho tum meri ye baar baar kehta hu ..
+Yaki na aaye to pooch lena jiya siya aur riya se ...
+Yahi baat mai unke kaan me kehta hu .... -->
+
+<!-- ki ek bhaala tum ishq ka is taraf fekti kyon nahi
+ki ek bhalaa tum ishq ka is taraf fekti kyon nahi
+fekti kyon nahi, tumhari khushbu mere badan se mehakti kyon nhi
+ek bhala tum ishq ka is taraf fekti kyon nahi
+tumhari khushbu mere badan se mehakti kyon nhi
+aur aaj ghar khali hai, dil udaas hai aur tum jaa rahi ho
+ki aaj ghar khali hai, dil udaas hai aur tum jaa rahi ho
+jaa rahi ho, mera dil baith raha hai yrr tum baithti kyon nahi -->
+
+
+<!-- Mohabbat mein dil majboor nahi aazaad hota ha -->

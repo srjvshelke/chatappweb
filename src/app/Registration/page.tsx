@@ -2,9 +2,16 @@
 
 import React, { useState } from 'react'
 import { FcGoogle } from "react-icons/fc";
+
 import Backgroundforlogin from '../../public/chattingimg.jpg';
 import Link from 'next/link';
+import { useDispatch, useSelector } from "react-redux";
+
 const page: React.FC = () => {
+    const dispatch = new useDispatch();
+    const { error, loading, isAuthenticated } = useSelector(
+        (state) => state.user
+    );
     const [Registration, setRegistration] = useState({
         Name: "",
         Username: "",
@@ -22,8 +29,12 @@ const page: React.FC = () => {
 
     //
     const submit = (e) => {
+
         e.preventDefault();
         alert(`Name : ${Registration.Name} and Username : ${Registration.Username}  and Password : ${Registration.Password} and confirmPAssword : ${Registration.Confirm_Password}`);
+
+        console.log(`Name : ${Registration.Name} and Username : ${Registration.Username}  and Password : ${Registration.Password} and confirmPAssword : ${Registration.Confirm_Password}`);
+
         setRegistration({
             Name: "",
             Username: "",
@@ -31,11 +42,12 @@ const page: React.FC = () => {
             Confirm_Password: ""
         })
     }
+
     return (
         <div className='Loginpage w-full h-screen flex py-4 px-4'>
             <div className='left w-[50%] h-[100%]' >
                 <div className='loginside w-[100%] h-[100%] flex flex-col justify-center items-center bg-slate-400 '>
-                    <form className='w-[100%] h-[100%] py-4 px-7 flex flex-col justify-center items-center'>
+                    <form className='w-[100%] h-[100%] py-4 px-7 flex flex-col justify-center items-center' action="#" method="POST" onSubmit={submit}>
                         <h2 className='font-bold text-4xl mb-6 '>Welcome</h2>
 
                         <div className="flex flex-col w-[60%]">
@@ -68,9 +80,9 @@ const page: React.FC = () => {
                             <label className=" block text-gray-700 text-lg font-bold mb-2">
                                 Confirm Password
                             </label>
-                            <input id="confirm_Password" name="confirm_Password" type="confirm_Password" value={Registration.Confirm_Password} required
+                            <input id="Confirm_Password" name="Confirm_Password" type="Password" value={Registration.Confirm_Password} required
                                 className=" bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 appearance-none block focus:outline-none focus:shadow-outline"
-                                placeholder="Enter your confirm_Password" onChange={userregisterdata} />
+                                placeholder="Enter your Confirm_Password" onChange={userregisterdata} />
 
                         </div>
 
@@ -167,6 +179,8 @@ const page: React.FC = () => {
         // </div>
 
     )
+
+
 }
 
 export default page;
