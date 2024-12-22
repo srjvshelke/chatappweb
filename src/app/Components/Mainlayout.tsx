@@ -1,7 +1,7 @@
 'use client'
 import React, { ReactNode } from 'react'
 import { Provider } from 'react-redux'
-import { store } from '../REDUX/store'
+import { store } from '../store'
 
 const Mainlayout =({children}:{children:ReactNode}) =>{
   return (

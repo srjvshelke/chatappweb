@@ -6,12 +6,13 @@ import { FcGoogle } from "react-icons/fc";
 import Backgroundforlogin from '../../public/chattingimg.jpg';
 import Link from 'next/link';
 import { useDispatch, useSelector } from "react-redux";
+import { SignUp } from '../REDUX/Reducer/AuthSlice';
 
 const page: React.FC = () => {
-    const dispatch = new useDispatch();
-    const { error, loading, isAuthenticated } = useSelector(
-        (state) => state.user
-    );
+    const dispatch = useDispatch();
+    // const { error, loading, isAuthenticated } = useSelector(
+    //     (state) => state.user
+    // );
     const [Registration, setRegistration] = useState({
         Name: "",
         Username: "",
@@ -29,7 +30,7 @@ const page: React.FC = () => {
 
     //
     const submit = (e) => {
-
+        dispatch(SignUp(Registration));
         e.preventDefault();
         alert(`Name : ${Registration.Name} and Username : ${Registration.Username}  and Password : ${Registration.Password} and confirmPAssword : ${Registration.Confirm_Password}`);
 

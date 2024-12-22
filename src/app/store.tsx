@@ -1,12 +1,12 @@
 // "use client" ;
 import { configureStore } from "@reduxjs/toolkit";
-import chatSlice from "./Reducer/chatSlice";
-import userSlice from "./Reducer/userSlice";
+// import chatSlice from "./REDUX/Reducer/chatSlice";
+import authSlice from "./REDUX/Reducer/authSlice";
 
 export const store = configureStore({
     reducer: {
-        chats: chatSlice,
-        users:userSlice,
+        // chats: chatSlice,
+        users:authSlice,
     },
     devTools: true,
 });
