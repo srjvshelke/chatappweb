@@ -14,13 +14,14 @@ export const SignUp = createAsyncThunk("signupuser", async (body) => {
     console.log(body);
 
     // const config = { headers: { "Content-Type": "application/json" } };
-    // const register = await fetch(`/api/register`, {
-    //     method: 'POST',
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(body)
-    // }
-    // )
-    // return await register.json();
+    const register = await fetch(`http://localhost:3000/server/api/loginroute`, {
+        method: 'GET',
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+    }
+    )
+    console.log(register.json());
+    return await register.json();
     // dispatch({ type: LOGIN_SUCCESS, payload: data.user });
 });
 
